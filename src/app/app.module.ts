@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { GalleryModule } from '@ngx-gallery/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-// import { ImageViewerModule } from '@hallysonh/ngx-imageviewer';
+import { NgxImageZoomModule } from 'ngx-image-zoom';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     GalleryModule,
     FlexLayoutModule,
-    // ImageViewerModule
+    NgxImageZoomModule
   ],
   providers: [],
   bootstrap: [AppComponent]

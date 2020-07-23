@@ -5,10 +5,8 @@
   [itemTemplate]="itemTemplate"
   [thumbTemplate]="thumbTemplate"></gallery>
 
-  <!-- create a template to use the imageviewer -->
-
-<!-- <ng-template #itemTemplate let-type="type">
+<ng-template #itemTemplate let-type="type" let-data="data">
   <ng-container *ngIf="type === 'image'">
-    <ngx-imageviewer [src]="src"></ngx-imageviewer>
+    <lib-ngx-image-zoom [zoomMode]="hover" [thumbImage]="data.thumb" [fullImage]="data.src"></lib-ngx-image-zoom>
   </ng-container>
-</ng-template> -->
+</ng-template>

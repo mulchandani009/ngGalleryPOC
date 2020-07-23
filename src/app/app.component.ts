@@ -79,7 +79,7 @@ export class AppComponent implements OnInit {
     this.arr.map((item: any) => {
       switch (item.type) {
         case GalleryItemType.Image:
-          galleryRef.addImage({src: item.src, thumb: item.thumb, title: item.title});
+          galleryRef.addImage({src: item.src, thumb: item.thumb, title: item.title, data: item});
           break;
         case GalleryItemType.Video:
           galleryRef.addVideo({src: item.src, thumb: item.thumb, poster: item.poster});
