@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngGalleryPOC"
+    }
+  },
+  "defaultProject": "ngGalleryPOC",
+  "cli": {
+    "analytics": false
+  }
 }
