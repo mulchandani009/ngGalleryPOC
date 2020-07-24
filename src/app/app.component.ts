@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faVideo } from '@fortawesome/free-solid-svg-icons';
+import { Lightbox } from '@ngx-gallery/lightbox';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,6 @@ export class AppComponent implements OnInit {
 
 	readonly youtubeIcon = faYoutube;
   readonly videoIcon = faVideo;
-
 	readonly arr = [
 	  {
 	    type: 'image',
@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
   readonly media$: Observable<GalleryConfig>;
   //this is comment
 
-  constructor(private _gallery: Gallery, mediaObserver: MediaObserver) {
+  constructor(public lightbox: Lightbox, private _gallery: Gallery, mediaObserver: MediaObserver) {
     this.media$ = mediaObserver.media$.pipe(
       map((res: MediaChange) => {
         if (res.mqAlias === 'sm' || res.mqAlias === 'xs') {
@@ -98,5 +98,8 @@ export class AppComponent implements OnInit {
           galleryRef.addIframe({src: item.src, thumb: item.thumb});
       }
     });
+  }
+  openLightBoxGallery(index){
+  	this.lightbox.open(index, 'mySliderElement');
   }
 }

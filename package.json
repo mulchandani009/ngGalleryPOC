@@ -26,6 +26,8 @@
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@ngx-gallery/core": "^5.0.0-beta.0",
+    "@ngx-gallery/gallerize": "^5.0.0-beta.0",
+    "@ngx-gallery/lightbox": "^5.0.0-beta.0",
     "hammerjs": "^2.0.8",
     "ngx-image-zoom": "^0.6.0",
     "rxjs": "~6.5.5",

@@ -4,6 +4,9 @@
 ::ng-deep #mySliderElement gallery-item .g-image-item {
     background-image: none !important;
 }
+::ng-deep lightbox gallery-item .g-image-item {
+    background-image: none !important;
+}
 ::ng-deep #mySliderElement .item-type {
   padding: 6px;
   width: 36px;

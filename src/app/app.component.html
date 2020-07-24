@@ -7,7 +7,7 @@
 
 <ng-template #itemTemplate let-index="index" let-type="type" let-data="data" let-currIndex="currIndex">
   <ng-container *ngIf="type === 'image' && index === currIndex">
-    <lib-ngx-image-zoom [thumbImage]="data.thumb" [fullImage]="data.src"></lib-ngx-image-zoom>
+    <lib-ngx-image-zoom (click)="openLightBoxGallery(index)" [thumbImage]="data.thumb" [fullImage]="data.src"></lib-ngx-image-zoom>
     <span class="item-text">
       {{data?.title}}
     </span>
