@@ -56,6 +56,7 @@ export class AppComponent implements OnInit {
 	];
 
   readonly media$: Observable<GalleryConfig>;
+  //this is comment
 
   constructor(private _gallery: Gallery, mediaObserver: MediaObserver) {
     this.media$ = mediaObserver.media$.pipe(
