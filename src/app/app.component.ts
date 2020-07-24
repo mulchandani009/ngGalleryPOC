@@ -16,26 +16,26 @@ export class AppComponent implements OnInit {
 	readonly arr = [
 	  {
 	    type: 'image',
-	    src: 'assets/images/1.png',
-	    thumb: 'assets/images/thumbs/1.png',
+	    src: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/1.png?raw=true',
+	    thumb: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/thumbs/1.png?raw=true',
 	    title: 'This is information for this slide : Number 1'
 	  },
 	  {
 	    type: 'image',
-	    src: 'assets/images/2.png',
-	    thumb: 'assets/images/thumbs/2.png',
+	    src: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/2.png?raw=true',
+	    thumb: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/thumbs/2.png?raw=true',
 	    title: 'This is information for this slide : Number 2'
 	  },
 	  {
 	    type: 'image',
-	    src: 'assets/images/3.png',
-	    thumb: 'assets/images/thumbs/3.png',
+	    src: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/3.png?raw=true',
+	    thumb: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/thumbs/3.png?raw=true',
 	    title: 'This is information for this slide : Number 3'
 	  },
 	  {
 	    type: 'image',
-	    src: 'assets/images/4.png',
-	    thumb: 'assets/images/thumbs/4.png',
+	    src: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/4.png?raw=true',
+	    thumb: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/thumbs/4.png?raw=true',
 	    title: 'This is information for this slide : Number 4'
 	  },
 	  {
