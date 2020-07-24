@@ -1,4 +1,4 @@
-import { Component, ViewChild, TemplateRef, ChangeDetectionStrategy, OnInit } from '@angular/core';
+import { Component, ViewChild, TemplateRef, OnInit } from '@angular/core';
 import { Gallery, GalleryConfig, GalleryItemType, GalleryItem, ImageItem, ThumbnailsPosition, ImageSize } from '@ngx-gallery/core';
 import { MediaChange, MediaObserver } from '@angular/flex-layout';
 import { Observable } from 'rxjs';
@@ -7,35 +7,35 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
 
 	@ViewChild('itemTemplate') itemTemplate: TemplateRef<any>;
+
 	readonly arr = [
 	  {
 	    type: 'image',
-	    src: 'https://cdn.pixabay.com/photo/2020/07/15/19/50/parachute-5408876_960_720.jpg',
-	    thumb: 'https://cdn.pixabay.com/photo/2020/07/15/19/50/parachute-5408876_960_720.jpg',
+	    src: 'assets/images/1.png',
+	    thumb: 'assets/images/thumbs/1.png',
 	    title: 'This is information for this slide : Number 1'
 	  },
 	  {
 	    type: 'image',
-	    src: 'https://cdn.pixabay.com/photo/2020/07/08/07/55/butterfly-5383001_960_720.jpg',
-	    thumb: 'https://cdn.pixabay.com/photo/2020/07/08/07/55/butterfly-5383001_960_720.jpg',
+	    src: 'assets/images/2.png',
+	    thumb: 'assets/images/thumbs/2.png',
 	    title: 'This is information for this slide : Number 2'
 	  },
 	  {
 	    type: 'image',
-	    src: 'https://cdn.pixabay.com/photo/2020/07/10/20/25/wheat-field-5392067_960_720.jpg',
-	    thumb: 'https://cdn.pixabay.com/photo/2020/07/10/20/25/wheat-field-5392067_960_720.jpg',
+	    src: 'assets/images/3.png',
+	    thumb: 'assets/images/thumbs/3.png',
 	    title: 'This is information for this slide : Number 3'
 	  },
 	  {
 	    type: 'image',
-	    src: 'https://cdn.pixabay.com/photo/2019/09/27/20/40/houses-4509404_960_720.jpg',
-	    thumb: 'https://cdn.pixabay.com/photo/2019/09/27/20/40/houses-4509404_960_720.jpg',
+	    src: 'assets/images/4.png',
+	    thumb: 'assets/images/thumbs/4.png',
 	    title: 'This is information for this slide : Number 4'
 	  },
 	  {
@@ -76,7 +76,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    const galleryRef = this._gallery.ref('mixed');
+    const galleryRef = this._gallery.ref('mySliderElement');
     this.arr.map((item: any) => {
       switch (item.type) {
         case GalleryItemType.Image:

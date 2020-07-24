@@ -1,12 +1,15 @@
-<gallery id="mixed"
+<gallery id="mySliderElement"
   *ngIf="media$ | async; let config"
   [thumbWidth]="config.thumbWidth"
   [thumbHeight]="config.thumbHeight"
   [itemTemplate]="itemTemplate"
-  [thumbTemplate]="thumbTemplate"></gallery>
+  [thumbTemplate]="thumbTemplate" [dots]="true" [autoPlay]="false" [playerInterval]="5000"></gallery>
 
-<ng-template #itemTemplate let-type="type" let-data="data">
-  <ng-container *ngIf="type === 'image'">
-    <lib-ngx-image-zoom [zoomMode]="hover" [thumbImage]="data.thumb" [fullImage]="data.src"></lib-ngx-image-zoom>
+<ng-template #itemTemplate let-index="index" let-type="type" let-data="data" let-currIndex="currIndex">
+  <ng-container *ngIf="type === 'image' && index === currIndex">
+    <lib-ngx-image-zoom [thumbImage]="data.thumb" [fullImage]="data.src" [enableLens]="true" [lensWidth]="150" [lensHeight]="150"></lib-ngx-image-zoom>
+    <span class="item-text">
+      {{data?.title}}
+    </span>
   </ng-container>
 </ng-template>
