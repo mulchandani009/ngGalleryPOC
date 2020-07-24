@@ -41,8 +41,8 @@ export class AppComponent implements OnInit {
 	  {
 	    type: 'video',
 	    src: 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4',
-	    thumb: 'http://laza.jalbum.net/Testing%20Base%20as%20site/Media/slides/big_buck_bunny.jpg',
-	    poster: 'http://laza.jalbum.net/Testing%20Base%20as%20site/Media/slides/big_buck_bunny.jpg'
+	    thumb: 'https://tubularinsights.com/wp-content/uploads/2015/10/17tips_cover.png',
+	    poster: 'https://tubularinsights.com/wp-content/uploads/2015/10/17tips_cover.png'
 	  },
 	  {
 	    type: 'youtube',
