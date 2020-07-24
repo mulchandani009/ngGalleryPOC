@@ -16,14 +16,14 @@ export class AppComponent implements OnInit {
 	readonly arr = [
 	  {
 	    type: 'image',
-	    src: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/1.png?raw=true',
-	    thumb: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/thumbs/1.png?raw=true',
+	    src: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/1.jpg?raw=true',
+	    thumb: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/thumbs/1.jpg?raw=true',
 	    title: 'This is information for this slide : Number 1'
 	  },
 	  {
 	    type: 'image',
-	    src: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/2.png?raw=true',
-	    thumb: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/thumbs/2.png?raw=true',
+	    src: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/2.jpg?raw=true',
+	    thumb: 'https://github.com/mulchandani009/ngGalleryPOC/blob/master/src/assets/images/thumbs/2.jpg?raw=true',
 	    title: 'This is information for this slide : Number 2'
 	  },
 	  {
