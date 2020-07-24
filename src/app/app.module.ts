@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { GalleryModule } from '@ngx-gallery/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
     BrowserAnimationsModule,
     GalleryModule,
     FlexLayoutModule,
-    NgxImageZoomModule
+    NgxImageZoomModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

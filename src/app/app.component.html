@@ -3,7 +3,7 @@
   [thumbWidth]="config.thumbWidth"
   [thumbHeight]="config.thumbHeight"
   [itemTemplate]="itemTemplate"
-  [thumbTemplate]="thumbTemplate" [dots]="true" [autoPlay]="false" [playerInterval]="5000"></gallery>
+  [thumbTemplate]="thumbTemplate" [dots]="true" [nav]="true" [thumb]="true" [autoPlay]="false" [playerInterval]="5000"></gallery>
 
 <ng-template #itemTemplate let-index="index" let-type="type" let-data="data" let-currIndex="currIndex">
   <ng-container *ngIf="type === 'image' && index === currIndex">
@@ -12,4 +12,14 @@
       {{data?.title}}
     </span>
   </ng-container>
+</ng-template>
+
+
+<ng-template #thumbTemplate let-type="type" let-index="index" let-data="data" let-currIndex="currIndex">
+  <span *ngIf="type === 'youtube'" class="item-type">
+    <fa-icon [icon]="youtubeIcon" size="lg"></fa-icon>
+  </span>
+  <span *ngIf="type === 'video'" class="item-type">
+    <fa-icon [icon]="videoIcon" size="lg"></fa-icon>
+  </span>
 </ng-template>

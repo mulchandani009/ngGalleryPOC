@@ -3,6 +3,8 @@ import { Gallery, GalleryConfig, GalleryItemType, GalleryItem, ImageItem, Thumbn
 import { MediaChange, MediaObserver } from '@angular/flex-layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faVideo } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +14,10 @@ import { map } from 'rxjs/operators';
 export class AppComponent implements OnInit {
 
 	@ViewChild('itemTemplate') itemTemplate: TemplateRef<any>;
+	@ViewChild('thumbTemplate') thumbTemplate: TemplateRef<any>;
+
+	readonly youtubeIcon = faYoutube;
+  readonly videoIcon = faVideo;
 
 	readonly arr = [
 	  {
@@ -50,8 +56,8 @@ export class AppComponent implements OnInit {
 	  },
 	  {
 	    type: 'iframe',
-	    src: 'https://infinite-integrations.com/',
-	    thumb: 'https://infinite-integrations.com/images/team/team-1.jpg'
+	    src: 'http://infinite-integrations.com/',
+	    thumb: 'http://infinite-integrations.com/images/team/team-1.jpg'
 	  }
 	];
 

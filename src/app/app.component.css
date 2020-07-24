@@ -4,6 +4,16 @@
 ::ng-deep #mySliderElement gallery-item .g-image-item {
     background-image: none !important;
 }
+::ng-deep #mySliderElement .item-type {
+  padding: 6px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 ::ng-deep #mySliderElement .item-text {
   position: absolute;
   top: 0;
